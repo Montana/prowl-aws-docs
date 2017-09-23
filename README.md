@@ -45,3 +45,7 @@ With this data we can connect S3 to AWS Glue. So now we know how the Data struct
 
 ![AWS](http://www.getprowl.com/assets/images/flower.png)
 
+## Automation 
+
+I would use Jenkins in any other case, but to stay within the suite, automation here calls for AWS Lambda. 
+

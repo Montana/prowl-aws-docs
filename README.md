@@ -14,7 +14,7 @@ In the private Prowl repo's there are some VMWare Fusion license keys "add-ons" 
 
 You can access this box, that's maintained by myself (Montana) via 
 
-<pre>vagarant init montana/gentoo64</pre>
+<pre>vagrant init montana/gentoo64</pre>
 <pre>vagrant up</pre>
 <pre>vagrant ssh</pre> 
 

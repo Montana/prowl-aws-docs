@@ -126,4 +126,13 @@ And join our Slack channel here: https://slack.zappa.io
 Love!,
  ~ Team Zappa!</pre>
  
- In this case, we have an umbrella of options to try and fix this, I'll go over what has worked the best for myself personally. 
+ In this case, we have an umbrella of options to try and fix this, I'll go over what has worked the best for myself personally. So what you'll need to do is specify a default region using environment variables, the drawback of using Lambda in my opinion is you must do this for every console, so a little frustrating. 
+ 
+ <pre>export AWS_DEFAULT_REGION=us-west-1</pre>
+ 
+ You need to add the default region in your `~/.awd/credentials` file
+ 
+ <pre>[default]
+aws_access_key_id = prowl_access_key
+aws_secret_access_key = prowl_access_key
+region=us-west-1</pre>

@@ -58,3 +58,11 @@ This will try and reach Lambda, if it fails, it will print out an error message.
 </p>
 
 
+## Using the Zappa environment 
+
+Okay, now that you're connected to Lambda, and you have hopefully grabbed our custom `django-storages` in the private repo, make sure Zappa has ALL of it's dependencies installed before you start using it 
+
+<pre>zappashell
+zappashell> python -m venv ve
+zappashell> source ve/bin/activate 
+(ve) zappa> pip install -r requirements.txt</pre> 

@@ -47,5 +47,14 @@ With this data we can connect S3 to AWS Glue. So now we know how the Data struct
 
 ## Automation 
 
-I would use Jenkins in any other case, but to stay within the suite, automation here calls for AWS Lambda. 
+I would use Jenkins in any other case, but to stay within the suite, automation here calls for AWS Lambda. Given the notion our employees have the AWS CLI setup, you can run 
+
+<pre>aws lambda list-functions --profile adminuser</pre> 
+
+This will try and reach Lambda, if it fails, it will print out an error message. Prowl already has a custom `s3-get-object` and a `django-storages` via Zappa. 
+
+<p align="center">
+  <img src="http://i.imgur.com/f1PJxCQ.gif" alt="Zappa Prowl Demo Gif"/>
+</p>
+
 

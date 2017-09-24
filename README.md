@@ -60,9 +60,70 @@ This will try and reach Lambda, if it fails, it will print out an error message.
 
 ## Using the Zappa environment 
 
-Okay, now that you're connected to Lambda, and you have hopefully grabbed our custom `django-storages` in the private repo, make sure Zappa has ALL of it's dependencies installed before you start using it 
+Okay, now that you're connected to Lambda, and you have hopefully grabbed our custom `django-storages` in the private repo, make sure Zappa has ALL of it's dependencies installed before you start using it, of course pip will fetch whatever is in the requirements.txt file, so let's start the Zappa shell, get the virtual enviornment going (you can use Docker alternatively), and install the requirements
 
 <pre>zappashell
 zappashell> python -m venv ve
 zappashell> source ve/bin/activate 
 (ve) zappa> pip install -r requirements.txt</pre> 
+
+As mentioned above you can use Docker, to do so 
+
+<pre>docker built -t prowl</pre>
+
+Well, looks like you're all set, you're connected to Lambda, and have Zappa going! Congratulations for setting up an aspect of automation, but sometimes, it isn't this seamless, we've ran into this problem -- specifically myself so in the next section I will be talking about the problem once you try and deploy using Django/Zappa. 
+
+## Deploying errors | Fixes 
+
+Okay, so we've setup our Django/Lambda enviornment, it looks a little something like this
+
+<pre>{
+    "dev": {
+        "django_settings": "montana.settings",
+        "s3_bucket": "prowl-test-code"
+    }
+}
+
+Does this look okay? (default 'y') [y/n]: y
+
+Done! Now you can deploy your Zappa application by executing:
+
+    $ zappa deploy dev
+
+After that, you can update your application code with:
+
+    $ zappa update dev
+
+To learn more, check out our project page on GitHub here: https://github.com/Miserlou/Zappa
+and stop by our Slack channel here: http://bit.do/zappa
+
+Enjoy!,
+ ~ Team Zappa!</pre>
+ 
+ As you see we are pointing Lambda to the proper S3 bucket, and everything seems dandy, so let's deploy the dev version
+ 
+ <pre>zappa deploy dev</pre>
+ 
+ Unfortunately we encounter an error 
+ 
+ <pre>zappa deploy dev
+Calling deploy for environment dev..
+Warning! AWS Lambda may not be available in this AWS Region!
+Warning! AWS API Gateway may not be available in this AWS Region!
+Oh no! An error occurred! :(
+
+==============
+
+Traceback (most recent call last):
+    [boring callback removed]
+NoRegionError: You must specify a region.
+
+==============
+
+Need help? Found a bug? Let us know! :D
+File bug reports on GitHub here: https://github.com/Miserlou/Zappa
+And join our Slack channel here: https://slack.zappa.io
+Love!,
+ ~ Team Zappa!</pre>
+ 
+ In this case, we have an umbrella of options to try and fix this, I'll go over what has worked the best for myself personally. 

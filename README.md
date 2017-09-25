@@ -143,7 +143,7 @@ Remember to becareful with the JSON, and make sure your commas are in the right 
 
 This should deploy, but if it doesn't it might be Django's security features blocking it from actually deploying so try to open the `settings.py` file and change `ALLOWED_HOSTS` to
 
-<pre>ALLOWED_HOSTS = [ '127.0.0.1', 'x6kb437rh.execute-api.us-wesr-1.amazonaws.com', ]</pre>
+<pre>ALLOWED_HOSTS = [ '127.0.0.1', 'x6kb437rh.execute-api.us-west-1.amazonaws.com', ]</pre>
 
 Then redeploy. 
 

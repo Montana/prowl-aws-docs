@@ -165,7 +165,7 @@ By default newly created RDS Security Groups have no inbound access. So you need
 
 | Type      | Protocol         | Port Range    | Source 
 | --------- |:-------------:   | -------------:| 
-| All TCP      TCP             | 5432          | 	sg9a9a1dfc
+| All TCP   |  TCP             | 5432          | sg9a9a1dfc
 
 ## Conclusion 
 

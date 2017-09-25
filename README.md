@@ -147,6 +147,19 @@ This should deploy, but if it doesn't it might be Django's security features blo
 
 Then redeploy. 
 
+## Django modules 
+
+There's a couple of Django modules you should have already on your Mac, or PC. Assuming you're running Linux, you need to run 
+<pre>pip install django-storages boto</pre> 
+
+Going back to the `settings.py` file, you want to add the following lines
+
+<pre>INSTALLED_APPS = (
+          ...,
+          'storages',
+     )</pre> 
+
+
 ## Conclusion 
 
 Well, that's that! You're linked up to Lambda, AWS, and you had help from Zappa! This could have also been done on a CDN like CloudFront or StackPath, but for the sake of time I won't be covering that here. This documentation is made for employees, but could potentially be applied to other situations, and for that reason I made this open. 

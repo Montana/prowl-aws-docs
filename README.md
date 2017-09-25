@@ -137,7 +137,7 @@ aws_access_key_id = prowl_access_key
 aws_secret_access_key = prowl_access_key
 region=us-west-1</pre>
 
-Remember to becareful with the JSON, and make sure your commas are in the right place!, now let's try and deploy again 
+Remember to becareful with the JSON, and make sure your commas are in the right place. Now let's try and deploy again 
 
 <pre>zappa deploy dev</pre> 
 

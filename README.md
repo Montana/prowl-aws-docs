@@ -137,4 +137,18 @@ aws_access_key_id = prowl_access_key
 aws_secret_access_key = prowl_access_key
 region=us-west-1</pre>
 
-Documentation to be continued. 
+Remember to becareful with the JSON, and make sure your commas are in the right place!, now let's try and deploy again 
+
+<pre>zappa deploy dev</pre> 
+
+This should deploy, but if it doesn't it might be Django's security features blocking it from actually deploying so try to open the `settings.py` file and change `ALLOWED_HOSTS` to
+
+<pre>ALLOWED_HOSTS = [ '127.0.0.1', 'x6kb437rh.execute-api.us-wesr-1.amazonaws.com', ]</pre>
+
+Then redeploy. 
+
+## Conclusion 
+
+Well, that's that! You're linked up to Lambda, AWS, and you had help from Zappa! This could have also been done on a CDN, but for the sake of time I won't be covering that here. This documentation is made for employees, but could potentially be applied to other situations, and for that reason I made this open. 
+
+Written by Montana Mendy (c) 2017 

@@ -149,6 +149,6 @@ Then redeploy.
 
 ## Conclusion 
 
-Well, that's that! You're linked up to Lambda, AWS, and you had help from Zappa! This could have also been done on a CDN, but for the sake of time I won't be covering that here. This documentation is made for employees, but could potentially be applied to other situations, and for that reason I made this open. 
+Well, that's that! You're linked up to Lambda, AWS, and you had help from Zappa! This could have also been done on a CDN like CloudFront or StackPath, but for the sake of time I won't be covering that here. This documentation is made for employees, but could potentially be applied to other situations, and for that reason I made this open. 
 
 Written by Montana Mendy (c) 2017 

@@ -163,7 +163,7 @@ Going back to the `settings.py` file, you want to add the following lines
      
 ## Configuring the RDS security group 
 
-By default newly created RDS Security Groups have no inbound access. So you need to make sure your RDS Security group has open TCP connections from your subnets associated with your AWS Lambdas.
+By default newly created RDS Security Groups have no inbound access. So you need to make sure your RDS Security group has open TCP connections from your subnets associated with your AWS Lambdas
 
 | Type     | Protocol         | Port Range |
 | ------------- |:-------------:| -----:|

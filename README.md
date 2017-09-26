@@ -1,6 +1,6 @@
 ![documentations](http://getprowl.com/assets/images/documentation1.png)
 
-# Amazon Web Services for Prowl 
+# Using AWS with Prowl 
 
 This is documentaiton in regards to how we are using Prowl with AWS.
 

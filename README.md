@@ -212,7 +212,7 @@ aws_lambda_function_name = os.environ.get('AWS_LAMBDA_FUNCTION_NAME')</pre>
 
 ## Conclusion 
 
-Hopefully after reading this, you have a general understanding of how Prowl is applying AWS to achieve our goal. Some of the things I covered above could have been done on a CDN like CloudFront or StackPath, but for the sake of time I won't be covering that here, maybe in a different documentation piece, just to cover all grounds for our developers depending on the path they want to take when using a VM/venv. This documentation is made generally for employees in a private repo (not the one in public, the one in private is filled with documetnatoin) but this particular piece could potentially be applied to other situations, and for that reason I made this open, to help others. 
+Hopefully after reading this, you have a general understanding of how Prowl is applying AWS to achieve our goal. Some of the things I covered above could have been done on a CDN like CloudFront or StackPath, but for the sake of time I won't be covering that here, maybe in a different documentation piece, just to cover all grounds for our developers depending on the path they want to take when using a VM/venv. This documentation is made generally for Prowl employees in a private repo (not the one in public, the one in private is filled with documentation) but this particular piece could potentially be applied to other situations, and for that reason I made this open to help others. 
 
 Written by Montana Mendy (c) 2017 
 https://www.getprowl.com

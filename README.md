@@ -169,6 +169,16 @@ By default newly created RDS Security Groups have no inbound access. So you need
 | ------------- |:-------------:| -----:|
 | All TCP    | TCP | 5432 |
 
+## Using built in Zappa commands to control Route53 
+
+In Zappa there are some custom commands you can run which make it SUPER easy to navigate around a somewhat complex set of circumstances, I've made a table below to explain 
+
+| DNS Provider   | CA         | Notes |
+| ------------- |:-------------:| -----:|
+| Route53    | AWS Certificate Manager | All AWS combo makes this ridiculous easy	|
+| Route53    | Let's Encrypt           | Another good option that Zappa has smoothed the way |
+| Other DNS  | Other                   | You've got some work to do |
+
 ## Conclusion 
 
 Well, that's that! You're linked up to Lambda, AWS, and you had help from Zappa! This could have also been done on a CDN like CloudFront or StackPath, but for the sake of time I won't be covering that here. This documentation is made for employees, but could potentially be applied to other situations, and for that reason I made this open. 

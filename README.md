@@ -215,3 +215,4 @@ aws_lambda_function_name = os.environ.get('AWS_LAMBDA_FUNCTION_NAME')</pre>
 Hopefully after reading this, you have a general how Prowl is applying AWS to acheive our goal. Some of the things I covered could have also been done on a CDN like CloudFront or StackPath, but for the sake of time I won't be covering that here. This documentation is made for employees, but could potentially be applied to other situations, and for that reason I made this open. 
 
 Written by Montana Mendy (c) 2017 
+https://www.getprowl.com

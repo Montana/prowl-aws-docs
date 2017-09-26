@@ -2,7 +2,7 @@
 
 # Using AWS with Prowl 
 
-This is documentaiton in regards to how we are using Prowl with AWS. If you're an employee and having trouble getting connected, read through this -- this should address any issue you have, and if you're just a lookie loo having some sort of problem with AWS -- this may help in some indirect way. 
+This is documentation in regards to how we are using Prowl with AWS. If you're an employee and having trouble getting connected, read through this -- this should address any issue you have, and if you're just a lookie loo having some sort of problem with AWS -- this may help in some indirect way. 
 
 ## Amazon QuickSight
 

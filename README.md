@@ -199,7 +199,7 @@ Are you sure you want to certify? [y/n] y
 Certifying domain www.getprowl.com..
 Created a new domain name with supplied certificate. Please note that it can take up to 40 minutes for this domain to be created and propagated through AWS, but it requires no further work on your part.
 Certificate updated!
-<pre>
+</pre>
 
 
 ## Conclusion 

@@ -201,6 +201,14 @@ Created a new domain name with supplied certificate. Please note that it can tak
 Certificate updated!
 </pre>
 
+## Lambda environment variables 
+
+Your code can pull Prowl information/data dumps from the execution environment by using the built-in AWS Lambda environment variables, but there are also custom ways of doing this in Zappa. For example, you could add `SOME_LAMBDA_KEY` in the AWS console and retrieve it in your code, via 
+
+<pre>import os
+some_lamda_key = os.environ.get('SOME_LAMBDA_KEY')
+# or get system values
+aws_lambda_function_name = os.environ.get('AWS_LAMBDA_FUNCTION_NAME')</pre>
 
 ## Conclusion 
 

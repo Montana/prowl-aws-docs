@@ -179,6 +179,29 @@ In Zappa there are some custom commands you can run which make it SUPER easy to 
 | Route53    | Let's Encrypt           | Another good option that Zappa has smoothed the way |
 | Other DNS  | Other                   | You've got some work to do |
 
+You can edit the Zappa settings file, which is to configure all these gateways properly 
+
+<pre>     "certificate_arn": "arn:aws:acm:us-west-1:738356466015:certificate/1d066282-ce94-4ad7-a802-2ff87d32b104",
+        "domain": "www.getprowl.com",</pre>
+        
+Then
+
+<pre>"dev": {
+        "django_settings": "montana.settings", 
+        "s3_bucket": "haus-coffee",
+        "aws_region": "us-west-1",</pre>
+        
+Now obviously the bucket can be anything, in this case it's Haus Coffee based out of San Francisco. Now certify that Route53 passes all the tests that Zappa can perform, and hopefully you'll get it certified in your virtual environment
+
+<pre>(ve) $ zappa certify dev
+Calling certify for environment dev..
+Are you sure you want to certify? [y/n] y
+Certifying domain www.getprowl.com..
+Created a new domain name with supplied certificate. Please note that it can take up to 40 minutes for this domain to be created and propagated through AWS, but it requires no further work on your part.
+Certificate updated!
+<pre>
+
+
 ## Conclusion 
 
 Well, that's that! You're linked up to Lambda, AWS, and you had help from Zappa! This could have also been done on a CDN like CloudFront or StackPath, but for the sake of time I won't be covering that here. This documentation is made for employees, but could potentially be applied to other situations, and for that reason I made this open. 

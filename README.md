@@ -22,7 +22,9 @@ If there is a port collision, I've already released a patch for this box, so por
 
 <pre>vagrant halt</pre> 
 
-Then reenter those above commands. 
+Then reenter those above commands. If the port collison still exists, try running 
+<pre>sed -i '' '/$1/d' /Library/Preferences/VMware\ Fusion/networking</pre> 
+This of course is assuming you are using the VMWare Fusion provider.
 
 ## OpenRefine with Conciliator 
 

@@ -24,7 +24,7 @@ If there is a port collision, I've already released a patch for this box, so por
 
 Then reenter those above commands. If the port collison still exists, try running 
 <pre>sed -i '' '/$1/d' /Library/Preferences/VMware\ Fusion/networking</pre> 
-This of course is assuming you are using the VMWare Fusion provider. There's a bash script I've created that does this automatically if you want to save some time. https://github.com/Montana/vagrant_port_collision_fix
+This of course is assuming you are using the VMWare Fusion provider. There's a [bash]: http://www.reddit.comhttps://github.com/Montana/vagrant_port_collision_fix script I've created that does this automatically if you want to save some time. http://www.reddit.comhttps://github.com/Montana/vagrant_port_collision_fix
 
 ## OpenRefine with Conciliator 
 

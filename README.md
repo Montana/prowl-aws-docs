@@ -77,6 +77,15 @@ As mentioned above you can use Docker, to do so
 
 Well, looks like you're all set, you're connected to Lambda, and have Zappa going! Congratulations for setting up an aspect of automation, but sometimes, it isn't this seamless, we've ran into this problem -- specifically myself so in the next section I will be talking about the problem once you try and deploy using Django/Zappa. 
 
+## Client Dashboard 
+
+This is a mockup made by our co-founder Jake Augunas, essentially once you login from our web portal, you will have these actionalable insights, and most of this will be using what's being described in this document, AWS.
+
+<p align="center">
+  <img src="http://www.getprowl.com/assets/images/mockup.png">
+</p>
+
+
 ## Deploying errors | Fixes 
 
 Okay, so we've setup our Django/Lambda enviornment, it looks a little something like this
